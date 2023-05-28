@@ -1,0 +1,8 @@
+slider = Math.round(effect("Slider Control")("Slider"))  
+    
+sec = slider%60 
+min = Math.floor(slider/60) 
+
+function addZero(n){ if (n<10) return "0" + n else return n } 
+
+addZero(min) + ":" + addZero(sec)
